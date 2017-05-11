@@ -2,7 +2,7 @@
 A simple vanilla javascript accordion.
 
 ## Demo
-You can currently view a demo on my [Codepen page](https://codepen.io/simondavies/pen/zwWmrE)
+You can currently view a demo on my [Codepen page](https://codepen.io/simondavies/full/zwWmrE/)
 
 
 ## Installing
