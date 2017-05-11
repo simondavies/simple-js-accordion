@@ -1,0 +1,31 @@
+{
+  "name": "simple-js-accordion",
+  "version": "0.1.0",
+  "description": "A simple vanilla Javascript accordion.",
+  "main": "app.js",
+  "scripts": {
+      "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+      "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+      "production": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+      "copyfiles" : "cp dist/accordionjs.min.js Examples/assets/ && cp dist/accordionjs.min.css Examples/assets/"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simondavies/simple-js-accordion.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Plugin",
+    "Accordion",
+    "Vanilla"
+  ],
+  "author": "Simon Davies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simondavies/simple-js-accordion/issues"
+  },
+  "homepage": "https://github.com/simondavies/simple-js-accordion#readme",
+  "devDependencies": {
+    "laravel-mix": "^0.11.4"
+  }
+}

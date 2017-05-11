@@ -1,0 +1,52 @@
+/**
+ * base css styles to pretify the examples page(s)
+ */
+
+ html {
+     font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+     font-size: 15px;
+     font-weight: normal;
+     line-height: 1.5;
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+     background: #fff;
+     color: #666;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     text-rendering: optimizeLegibility;
+ }
+
+*,html,body {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    padding: 0;
+    padding-top: 40px;
+    color: #060505;
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-bottom: 4px;
+    border-bottom: 1px #ccc solid;
+    font-size: 32px;
+    line-height: 36px;
+}
+.content {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+}

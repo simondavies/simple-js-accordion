@@ -1,0 +1,99 @@
+/**
+ * AccordionJS SCSS
+ * @author Simon Davies
+ *
+ * https://github.com/simondavies/simple-js-accordion
+ */
+
+/**
+ * local sass variables
+ */
+$text-colour : #060505;
+$link-colour : #EF5752;
+$link-hover-colour : darken($link-colour,7);
+$border-colour : #efefef;
+
+/**
+ * Main scss styles
+ */
+.accordion-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+    // accordion panel
+    .accordion-panel {
+        margin: 10px auto;
+        padding: 0;
+        position: relative;
+        .accordion-title {
+          margin: 0;
+          margin-bottom: 10px;
+          padding: 0;
+          padding-bottom: 4px;
+          border-bottom: 1px $border-colour solid;
+          a:link, a:visited, a:active {
+              display: block;
+              font-size: 16px;
+              line-height: 20px;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-weight: 600;
+              color: $text-colour;
+              transition: color 800ms;
+              &:after {
+                content: '+';
+                position: absolute;
+                right: 0;
+                font-size: 20px;
+                line-height: 20px;
+                color: $link-hover-colour;
+                transition: all 500ms;
+              }
+          }
+          a:hover, a:hover:visited {
+              color: $link-hover-colour;
+              &:after {
+                  transform: rotate(45deg);
+              }
+          }
+          @media screen and (max-width: 767px) {
+              font-size: 16px;
+              line-height: 20px;
+              padding-bottom: 10px;
+          }
+          @media screen and (max-width: 400px) {
+              font-size: 14px;
+              line-height: 18px;
+              padding-bottom: 6px;
+          }
+      } // eo:accordion title
+
+        .accordion-content {
+            margin: 0;
+            padding: 0;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 400ms;
+        } // eo:accordion content
+
+        &.is-active {
+          .accordion-title {
+            a:link, a:visited, a:active, a:hover,a:hover:visited {
+                &:after {
+                  transform: rotate(45deg);
+                  color: $text-colour;
+                }
+              }
+          }
+          .accordion-content {
+              padding: 0;
+              margin: 0;
+              max-height: 400px;
+              opacity: 1;
+              transition: all 1000ms;
+          }
+        } // eo:is active
+
+    } //eo:accordion panel
+} // eo: accordion wrapper
